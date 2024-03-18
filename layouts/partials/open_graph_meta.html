@@ -23,6 +23,7 @@
 {{ with .Params.videos }}
     {{ range first 1 . }}
         <meta property="og:video" content="{{ . | absURL }}" />
+	<meta property="og:image" content="https://www.distortions.net/uploads/2024/poster.png" />
     {{ end }}
 {{ end }}
 
